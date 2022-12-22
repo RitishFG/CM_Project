@@ -1,0 +1,98 @@
+* {
+  font-family: "Graphik Web", Helvetica, sans-serif;
+  background-color: #f9f9fa;
+}
+h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 50px;
+  color: #2c6187;
+}
+form {
+  width: 25%;
+  height: auto;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 50px;
+  padding: 10px 20px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+label {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 20px;
+  background-color: white;
+}
+form > input {
+  padding: 15px 30px;
+  margin: 10px;
+  border-width: 1px;
+  border-radius: 5px;
+  background-color: rgb(252, 252, 252);
+}
+input:focus {
+  outline-color: #4f8ff5;
+}
+input[type="submit"] {
+  margin-top: 20px;
+  padding: 20px 30px;
+  border: none;
+  background-color: #80bb35;
+  color: white;
+}
+input[type="submit"]:hover {
+  background-color: #62961e;
+}
+#create {
+  /* border: 1px solid red; */
+  width: 25%;
+  height: auto;
+  margin: auto;
+  padding: 10px 20px;
+  margin-top: 20px;
+  text-align: center;
+  background-color: rgb(252, 252, 252);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#create > h4 > a {
+  text-decoration: none;
+  /* background-color: white; */
+  color: #5b9dee;
+}
+#create > p {
+  color: #99a4ba;
+}
+#create:hover,
+p,
+h4 {
+  background-color: white;
+}
+form > div {
+  /* height: 40%; */
+  margin: auto;
+  display: flex;
+  align-items: center;
+  /* border: 1px solid red; */
+  padding: 5px 10px;
+  margin-left: 5px;
+}
+#check {
+  /* margin-top: 15px; */
+  width: 30px;
+  height: 30px;
+  /* display: inline-flex; */
+}
+form > div p {
+  margin-left: 5px;
+  font-size: 18px;
+}
+
+@media all and (min-width: 100px) and (max-width: 850px) {
+  #create,
+  form {
+    width: 50%;
+  }
+}

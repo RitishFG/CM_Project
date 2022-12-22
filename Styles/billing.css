@@ -1,0 +1,134 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Graphik Web", Helvetica, sans-serif;
+}
+#bnavbar {
+  width: 100%;
+  height: 80px;
+  /* border: 1px solid red; */
+  background-color: #111324;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#bnavbar > h1 {
+  color: white;
+}
+#bnavbar > button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #51cfdb;
+  /* margin-left: 100px; */
+}
+#bnavbar > button > a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+#top-part {
+  width: 90%;
+  height: auto;
+  /* border: 1px solid red; */
+  margin: auto;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+h1 {
+  color: #434d5d;
+}
+p {
+  color: #96a6c7;
+}
+p > span {
+  color: #96a6c7;
+  font-weight: bold;
+}
+
+#first {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 50px;
+  /* align-items: center; */
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.card > p {
+  color: #111324;
+  margin-top: -20px;
+}
+.card > p > span {
+  font-size: 30px;
+  color: #111324;
+}
+.card > button {
+  padding: 15px 20px;
+  background-color: #61962b;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.card > button > a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+#pop {
+  background-color: #51cfdb;
+  color: white;
+  padding: 5px 10px;
+  /* margin-top: 2px; */
+}
+#tabular {
+  width: 90%;
+  height: 500px;
+  margin: auto;
+  margin-top: 20px;
+  /* border: 1px solid red; */
+}
+.place {
+  width: 100%;
+  /* border: 1px solid black; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-around;
+}
+h4 {
+  text-align: center;
+  /* border: 1px solid green; */
+  color: #434d6d;
+  padding: 20px 10px;
+}
+#repeat > div {
+  width: 100%;
+  /* border: 1px solid black; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-around;
+}
+#repeat > div > p {
+  text-align: center;
+  padding: 20px 10px;
+}
+@media all and (min-width: 100px) and (max-width: 850px) {
+  #top-part {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #bnavbar > h1 {
+    font-size: 20px;
+  }
+  #tabular {
+    display: none;
+  }
+}

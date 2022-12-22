@@ -1,0 +1,198 @@
+* {
+  font-family: "Graphik Web", Helvetica, sans-serif;
+}
+#top {
+  width: 80%;
+  height: auto;
+  /* border: 1px solid red; */
+  margin: auto;
+  padding-top: 80px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#top > h1 {
+  font-size: 50px;
+  color: #111324;
+}
+#top > p {
+  /* margin-top: -50px; */
+  color: #9096ac;
+}
+#top > button {
+  padding: 15px 25px;
+  background-color: #7856ff;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+#top > button > a {
+  color: white;
+  font-size: 15px;
+}
+#cards {
+  width: 100%;
+  /* border: 1px solid red; */
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  background-color: #f3f3f4;
+  padding: 20px;
+}
+#cards button {
+  padding: 15px 65px;
+  background-color: #7856ff;
+  border: none;
+  border-radius: 5px;
+}
+#cards span {
+  font-size: 40px;
+  font-weight: bold;
+  color: #111324;
+}
+#cards a {
+  color: white;
+  font-size: 15px;
+}
+#cards h2 {
+  color: #7856ff;
+}
+#cards p {
+  color: #9096ac;
+}
+#cards > div {
+  /* border: 1px solid black; */
+  text-align: center;
+  padding-bottom: 20px;
+  background-color: white;
+  border-radius: 5px;
+}
+#cards > div:nth-child(1) {
+  grid-area: 1/2/2/3;
+}
+#cards > div:nth-child(2) {
+  grid-area: 1/3/2/4;
+}
+#cards > div:nth-child(3) {
+  grid-area: 1/4/2/5;
+}
+#acc-settings {
+  /* border: 1px solid red; */
+  width: 82%;
+  /* margin: auto; */
+}
+#acc-settings > div {
+  /* border: 1px solid black; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-around;
+  /* align-items: center; */
+}
+#cards + h1 {
+  margin: 5px 10px;
+  color: #7856ff;
+}
+#acc-settings {
+  text-align: center;
+}
+#acc-settings + h1 {
+  margin: 25px 40px;
+  color: #7856ff;
+}
+#hns {
+  /* border: 1px solid red; */
+  width: 82%;
+  /* margin: auto; */
+  text-align: center;
+}
+#hns > div {
+  /* border: 1px solid black; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-around;
+  /* align-items: center; */
+}
+#hns + h1 {
+  text-align: center;
+  margin-top: 40px;
+}
+#faq {
+  width: 95%;
+  /* border: 1px solid red; */
+  margin: auto;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 30px;
+  background-color: #f3f3f4;
+  padding: 20px 20px;
+}
+#faq > div {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+}
+#faq p + p {
+  color: #9096ac;
+}
+#footer {
+  width: 100%;
+  height: auto;
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 30px;
+  background-color: #111324;
+}
+#footer div,
+#footer a {
+  /* border: 1px solid black; */
+  color: white;
+}
+#footer h4 {
+  color: #7d8491;
+}
+#footer p {
+  font-size: 12px;
+}
+@media all and (min-width: 100px) and (max-width: 850px) {
+  #cards {
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    /* padding: 50px; */
+  }
+
+  #cards > div:nth-child(1) {
+    grid-area: 1/1/2/2;
+  }
+  #cards > div:nth-child(2) {
+    grid-area: 2/1/3/2;
+  }
+  #cards > div:nth-child(3) {
+    grid-area: 3/1/4/2;
+  }
+  #cards + h1 {
+    display: none;
+  }
+  #acc-settings + h1 {
+    display: none;
+  }
+  #acc-settings {
+    display: none;
+  }
+  #hns {
+    display: none;
+  }
+  #faq {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #footer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

@@ -1,0 +1,154 @@
+* {
+  font-family: "Graphik Web", Helvetica, sans-serif;
+}
+#heading {
+  padding-top: 90px;
+  width: 90%;
+  margin: auto;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#heading > div {
+  /* border: 1px solid black; */
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 40px;
+}
+#heading > div > h1 {
+  font-size: 50px;
+  color: #111324;
+}
+#heading > div > p {
+  margin-top: -10px;
+  color: #2e495a;
+}
+#heading button {
+  padding: 20px 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #7856ff;
+}
+#heading a {
+  color: white;
+  font-size: 15px;
+}
+#heading > img {
+  width: 50%;
+}
+#mid {
+  /* border: 1px solid red; */
+  margin-top: 20px;
+  text-align: center;
+}
+#cards {
+  /* border: 1px solid red; */
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  /* padding: 20px; */
+}
+#cards > div {
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0px 5px;
+  /* justify-content: space-between; */
+}
+#cards img {
+  height: 50%;
+  width: 100%;
+  border-radius: 5px 5px 0px 0px;
+}
+#cards > div:nth-child(7) {
+  grid-area: 4/2/5/3;
+}
+#cards + div button {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 15px 30px;
+  background-color: #61962b;
+  border: none;
+  border-radius: 5px;
+}
+#cards + div button a {
+  font-size: 18px;
+  color: white;
+}
+#bottom {
+  width: 100%;
+  height: 600px;
+  /* border: 1px solid red; */
+  margin: auto;
+  margin-top: 40px;
+  background-image: url("https://img.redbull.com/images/c_crop,w_5472,h_2736,x_0,y_390,f_auto,q_auto/c_scale,w_1200/redbullcom/2019/03/21/2b8a5980-a116-4534-a56b-950307ffce4c/dunkers-beacon-stars-nightsky");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#bottom > h1,
+#bottom > p {
+  color: white;
+}
+#bottom > h1 {
+  font-size: 70px;
+}
+#bottom > p {
+  font-size: 20x;
+}
+#footer {
+  width: 100%;
+  height: auto;
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 30px;
+  background-color: #111324;
+}
+#footer div,
+#footer a {
+  /* border: 1px solid black; */
+  color: white;
+}
+#footer h4 {
+  color: #7d8491;
+}
+#footer p {
+  font-size: 12px;
+}
+@media all and (min-width: 100px) and (max-width: 850px) {
+  #heading {
+    flex-direction: column;
+    gap: 20px;
+  }
+  #heading > div {
+    width: 80%;
+    margin: auto;
+  }
+  #heading > img {
+    width: 80%;
+    margin: auto;
+  }
+  #cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #footer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

@@ -1,0 +1,183 @@
+* {
+  font-family: "Graphik Web", Helvetica, sans-serif;
+  color: #111324;
+}
+
+#heading {
+  width: 100%;
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  /* border: 1px solid red; */
+  text-align: center;
+  background-color: #f6f6f7;
+}
+#heading > p:nth-child(1) a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #b9b1b1;
+}
+#heading > p:nth-child(1) a:hover {
+  color: #7756ff;
+  cursor: pointer;
+}
+#heading > h1 {
+  font-size: 45px;
+}
+#heading > p:nth-child(3) {
+  font-size: 15px;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 25px;
+  /* padding: 0px 30px; */
+}
+#heading > button {
+  padding: 10px 25px;
+  background-color: #7756ff;
+  border: none;
+  border-radius: 5px;
+}
+#heading > button:hover {
+  background-color: #4f2ed2;
+}
+#heading a {
+  color: white;
+  font-size: 15px;
+}
+#support {
+  width: 90%;
+  margin: auto;
+  margin-top: 100px;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+}
+#support > div {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+#support h1 {
+  /* margin-top: 35px; */
+  font-size: 45px;
+}
+#support h3 {
+  color: #7756ff;
+}
+#support p {
+  font-size: 18px;
+}
+#support img {
+  width: 100%;
+}
+#support + hr {
+  margin-top: 50px;
+  width: 75%;
+}
+#friendly {
+  width: 90%;
+  margin: auto;
+  margin-top: 100px;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+}
+#friendly > div {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  justify-content: center;
+  /* align-items: center; */
+  /* border: 1px solid black; */
+}
+#friendly h1 {
+  /* margin-top: 35px; */
+  font-size: 45px;
+}
+#friendly h3 {
+  color: #7756ff;
+}
+#friendly p {
+  font-size: 18px;
+}
+#friendly img {
+  width: 100%;
+}
+#last {
+  height: 500px;
+  margin-top: 50px;
+  text-align: center;
+  background-image: url("https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/heroes/banner-acmn.jpg?ver=298");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#last > p {
+  color: white;
+  /* margin: auto; */
+}
+#last > p:nth-child(1) {
+  font-size: 30px;
+  width: 80%;
+  /* margin: auto; */
+  /* border: 1px solid palevioletred; */
+}
+#last > p:nth-child(2) {
+  margin-top: -10px;
+  font-size: 18px;
+  /* font-weight: lighter; */
+}
+#footer {
+  width: 100%;
+  height: auto;
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 30px;
+  background-color: #111324;
+}
+#footer div,
+#footer a {
+  /* border: 1px solid black; */
+  color: white;
+}
+#footer h4 {
+  color: #7d8491;
+}
+#footer p {
+  font-size: 12px;
+  color: white;
+}
+@media all and (min-width: 100px) and (max-width: 850px) {
+  #heading > p:nth-child(3) {
+    width: 80%;
+  }
+  #support {
+    flex-direction: column;
+    gap: 10px;
+  }
+  #support > div {
+    height: 45%;
+    width: 80%;
+    margin: auto;
+  }
+  #friendly {
+    flex-direction: column;
+    gap: 10px;
+  }
+  #friendly > div {
+    height: 45%;
+    width: 80%;
+    margin: auto;
+  }
+  #footer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

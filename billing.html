@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Billing</title>
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./Styles/billing.css" />
+  </head>
+  <body>
+    <div id="bnavbar">
+      <h1>Welcome to Billing Page. Choose a plan according to your need</h1>
+      <button><a href="login.html">Logout</a></button>
+    </div>
+    <div id="top-part">
+      <div id="first">
+        <h1>Choose a plan that's right for you</h1>
+        <p>
+          Your monthly prices are based on how many subscribes you have. Unlike
+          other email marketing providers, we do not charge for unsubscribes.
+        </p>
+        <p>All pricing shown in <span>USD</span></p>
+      </div>
+      <div class="card">
+        <h1>Basic</h1>
+        <p>All our core features for one low price</p>
+        <p><span>$9.00</span>/month</p>
+        <button>
+          <a href="payment.html" class="plan" value="one">Choose this plan</a>
+        </button>
+      </div>
+      <div class="card">
+        <h1>Unlimited</h1>
+        <p>Great for frequent email campaigns</p>
+        <p><span>$29.00</span>/month</p>
+        <button>
+          <a href="payment.html" class="plan" value="two">Choose this plan</a>
+        </button>
+      </div>
+      <div class="card">
+        <h1>Premier</h1>
+        <p>Optimize your strategy for the best results</p>
+        <p><span>$149.00</span>/month</p>
+        <button>
+          <a href="payment.html" class="plan" value="three">Choose this plan</a>
+        </button>
+      </div>
+    </div>
+    <div id="tabular">
+      <div class="place">
+        <h4>What's new</h4>
+        <h4>Basic</h4>
+        <h4>Unlimited</h4>
+        <h4>Premium</h4>
+      </div>
+      <hr />
+      <div id="repeat"></div>
+    </div>
+  </body>
+</html>
+<script src="./Scripts/billing.js"></script>
