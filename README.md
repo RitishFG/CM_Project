@@ -24,7 +24,7 @@
 - Card Validation during Payment
 - Responsive Layout
 
-## Deployed Link -  [Link](http://https://zippy-creponne-5eea24.netlify.app/ "Link")
+## Deployed Link -  [Link](https://zippy-creponne-5eea24.netlify.app/")
 
 ## Snippets
 <img src='https://drive.google.com/uc?export=view&id=1FO5rm9c4gK4yiS02Z3BeZCKfRQUDZLTB' alt='CM1'>
